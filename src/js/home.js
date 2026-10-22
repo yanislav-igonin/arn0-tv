@@ -408,18 +408,20 @@
             startRow: 1,
             hints: [['OK', 'Open'], ['▲', 'Settings']],
             rows: function () {
-                return [[$('gear')], UI.children($('apps-row')), UI.children($('inputs-row'))];
+                return [[$('samsung-home'), $('gear')], UI.children($('apps-row')), UI.children($('inputs-row'))];
             },
             activate: function (item) {
                 if (item.kind === 'app') launchApp(item);
                 else if (item.kind === 'all') UI.show('all');
                 else if (item.kind === 'input') openInput(item);
                 else if (item.kind === 'settings') UI.show('settings');
+                else if (item.kind === 'samsung-home') Settings.openSamsungHome();
             },
             // Home is the root: Back does nothing.
             onBack: function () { return true; }
         });
         $('gear')._item = { kind: 'settings' };
+        $('samsung-home')._item = { kind: 'samsung-home' };
 
         UI.register('all', {
             el: $('all'),

@@ -349,6 +349,8 @@ h1, h2 {
     height: 44px;
 }
 
+.gear-samsung { right: calc(var(--edge) + 96px); }
+
 .gear.focused {
     background: var(--fg);
     color: var(--bg);

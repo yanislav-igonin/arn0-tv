@@ -732,5 +732,5 @@
         });
     }
 
-    window.Settings = { init: init };
+    window.Settings = { init: init, openSamsungHome: openSamsungHome };
 })();
