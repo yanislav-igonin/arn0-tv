@@ -13,20 +13,17 @@
  */
 window.LAUNCHER_CONFIG = {
     apps: [
-        { id: 'xvvl3S1TT1.TizenTubeStandalone', label: 'YouTube', brand: 'youtube' },
-        { id: 'rJeHak5zRg.Spotify', label: 'Spotify' },
-        { id: 'Jz7aUrV2Q4.Twitch', label: 'Twitch' },
-        { id: 'E0P3lRI4H7.MYTF1', label: 'TF1+' },
-        { id: 'org.tizen.netflix-app', label: 'Netflix' },
-        { id: 'org.tizen.primevideo', label: 'Prime Video' },
-        { id: 'MCmYXNxgcu.DisneyPlus', label: 'Disney+' },
-        { id: 'com.samsung.tv.aria-video', label: 'Apple TV' }
+        { match: 'plex', label: 'Plex' },
+        { match: 'youtube', label: 'YouTube', brand: 'youtube' },
+        { match: 'netflix', label: 'Netflix' },
+        { match: 'prime', label: 'Prime Video' },
+        { match: 'apple tv|aria-video', label: 'Apple TV' },
+        { match: 'spotify', label: 'Spotify' },
+        { match: 'twitch', label: 'Twitch' }
     ],
 
     inputs: [
-        { hdmi: 1, label: 'Nintendo Switch 2', brand: 'switch' },
-        { hdmi: 2, label: 'PlayStation 5', brand: 'playstation' },
-        { hdmi: 4, label: 'Xbox Series X', brand: 'xbox' }
+        { hdmi: 4, label: 'Legion' }
     ],
 
     // How an input tile switches the TV. See README "HDMI inputs".
@@ -35,12 +32,12 @@ window.LAUNCHER_CONFIG = {
     //   'inapp'          show the input full screen inside the launcher (Back returns)
     inputMethod: 'switch+viewer',
 
-    locale: 'en-GB',
+    locale: 'ru-RU',
 
     theme: {
         // Starting wallpaper (key from js/wallpapers.js), or null for none (plain gradient).
         // Changed from Settings → Background; the TV remembers the choice.
-        wallpaper: null
+        wallpaper: 'milky-way'
     },
 
     /*
