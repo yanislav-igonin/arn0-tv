@@ -15,15 +15,11 @@ window.LAUNCHER_CONFIG = {
     apps: [
         { match: 'plex', label: 'Plex' },
         { match: 'youtube', label: 'YouTube', brand: 'youtube' },
-        { match: 'netflix', label: 'Netflix' },
-        { match: 'prime', label: 'Prime Video' },
-        { match: 'apple tv|aria-video', label: 'Apple TV' },
-        { match: 'spotify', label: 'Spotify' },
-        { match: 'twitch', label: 'Twitch' }
+        { match: 'apple tv|aria-video', label: 'Apple TV' }
     ],
 
     inputs: [
-        { hdmi: 4, label: 'Legion' }
+        { hdmi: 1, label: 'Legion' }
     ],
 
     // How an input tile switches the TV. See README "HDMI inputs".
