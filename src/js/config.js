@@ -13,9 +13,9 @@
  */
 window.LAUNCHER_CONFIG = {
     apps: [
-        { match: 'plex', label: 'Plex' },
-        { match: 'youtube', label: 'YouTube', brand: 'youtube' },
-        { match: 'apple tv|aria-video', label: 'Apple TV' }
+        { id: 'kIciSQlYEM.plex', label: 'Plex' },
+        { id: 'com.samsung.tv.cobalt-yt', label: 'YouTube', brand: 'youtube' },
+        { id: 'com.samsung.tv.aria-video', label: 'Apple TV' }
     ],
 
     inputs: [
