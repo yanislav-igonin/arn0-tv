@@ -8,6 +8,7 @@
     "build": "sh scripts/build.sh",
     "devlog": "node scripts/devlog-server.mjs",
     "icon": "node scripts/make-icon.mjs",
-    "fetch-assets": "node scripts/fetch-assets.mjs"
+    "fetch-assets": "node scripts/fetch-assets.mjs",
+    "deploy": "node scripts/deploy.mjs"
   }
 }

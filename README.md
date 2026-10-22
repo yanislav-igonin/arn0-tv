@@ -66,6 +66,21 @@ TV work is different in kind: it needs a machine on the same network as the TV, 
 can only read this repo cannot operate the TV. This repository includes the guarded helper source,
 but does not include a ready-to-run SDB staging/runner script or a per-TV recovery snapshot.
 
+## One-command deploy
+
+`npm run deploy` builds, signs, installs and launches the launcher on the TV. `npm run deploy -- --no-run` skips the launch.
+
+It reads `.env.local` (git-ignored):
+
+```
+TV_HOST=192.168.1.10        # last known address; rediscovered automatically if it changes
+TV_MODEL=QA65S90FAEXZN      # discovery only accepts this model
+TIZEN_PROFILE=my-profile    # Tizen security profile used for signing
+TIZEN_HOME=~/tizen-studio   # optional
+```
+
+Updates keep the same app id, so saved settings and any Home-button assignment survive.
+
 ## Put it on a TV
 
 **[docs/setup-tv.md](docs/setup-tv.md)** — installing the package, then optionally the Home button
